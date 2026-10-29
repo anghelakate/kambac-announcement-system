@@ -1,0 +1,55 @@
+node_modules/
+.env
+.env.*
+!.env.example
+
+# Local editor, verification, credentials, backups and generated output
+.vscode/
+.browser-verification/
+backups/
+coverage/
+.nyc_output/
+tests/
+test/
+__tests__/
+test-results/
+playwright-report/
+cypress/screenshots/
+cypress/videos/
+*.lcov
+junit*.xml
+dist/
+build/
+tmp/
+temp/
+*.log
+*.tmp
+*.cache
+
+# Assignment/report material is intentionally not part of the application repo
+docs/
+*.md
+!README.md
+*.puml
+*.txt
+*.zip
+
+# Screenshots and generated media; allow genuine public application assets
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.svg
+!public/**/*.png
+!public/**/*.jpg
+!public/**/*.jpeg
+!public/**/*.gif
+!public/**/*.webp
+!public/**/*.svg
+
+# Local-only verification and machine-specific Docker helpers
+scripts/prepare-ui-test-accounts.js
+scripts/verify-live.js
+scripts/verify-workspace-data.js
+scripts/start-docker.ps1
